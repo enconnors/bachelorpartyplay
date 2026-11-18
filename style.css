@@ -227,3 +227,6 @@ h1{margin-top:0}
 }
 
 @media(max-width:1000px){.hero-art{width:61.4125%}}
+
+.synopsis{font-size:clamp(19.55px,2.125vw,28.9px)}
+@media(max-width:600px){.synopsis{font-size:20.4px}}
