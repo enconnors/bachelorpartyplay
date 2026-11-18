@@ -308,3 +308,6 @@ h1{margin-top:0}
 @media(min-width:1001px){.hero h1{font-size:89.08px}.hero-credits{margin-top:20px}}
 
 @media(min-width:1001px){.hero h1 span+span{margin-top:8px}}
+
+/* Keep the second title line overlapping the photo at every wide width. */
+@media(min-width:1001px){.hero h1>span+span{left:0;justify-content:flex-end;text-align:right;width:100%}}
