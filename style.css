@@ -354,3 +354,10 @@ h1{margin-top:0}
 @media(max-width:600px){.company-main .cast-team{gap:26px 18px;max-width:350px}.company-main .cast-team h3{font-size:18px}.company-main .cast-team li:last-child{width:calc((100% - 18px)/2)}}
 
 .cast-headshot[src*="stephen"]{object-position:center 12%}.cast-headshot[src*="will"]{object-position:center 10%}
+
+/* Independent cast and creative columns keep their biography dropdowns below each list. */
+.cast-column,.team-column{min-width:0}
+.cast-column>.group-heading,.team-column>.creative-heading{margin:0 0 24px;text-align:center}
+.cast-column>.bio,.team-column>.bio{margin-top:32px}
+.bio strong{font-weight:600}
+@media(max-width:1000px){.team-column{margin-top:44px}}
