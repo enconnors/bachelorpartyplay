@@ -147,3 +147,13 @@ h1{margin-top:0}
 
 
 .hero h1 span+span{font-style:italic;padding-right:.05em}
+
+.hero-bottom .hero-performance-count{font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;color:var(--ivory)}
+.hero-bottom .hero-date{font-size:25px;color:var(--ivory)}
+@media(min-width:1001px){.hero-bottom .hero-date{font-size:24px}}
+@media(max-width:600px){.hero-bottom .hero-date{font-size:21px}}
+
+/* Match the graphics: open tracking and an oblique light title. */
+.hero h1 span+span{font-style:normal;letter-spacing:0;transform:skewX(-14deg);transform-origin:50% 70%;-webkit-text-stroke:.014em currentColor;padding-right:.08em}
+.about-main{text-align:center}
+.synopsis{margin-inline:auto}
