@@ -282,3 +282,5 @@ h1{margin-top:0}
 
 
 @media(min-width:1001px){.hero h1{font-size:clamp(61.2px,7.7724vw,128.52px)}}
+
+@media(min-width:1001px){.hero h1>span:first-child{left:-.3em}.hero h1>span+span{left:1.05em}}
