@@ -106,3 +106,12 @@ h1{margin-top:0}
 
 /* Keep the staggered title consistent throughout the stacked layout. */
 @media(max-width:1000px){.hero h1 span+span{margin-left:0;text-align:right;margin-top:8px}}
+
+/* Balance the three billing groups and center the performance details. */
+.hero-featuring{margin-top:24px}
+.hero-bottom{margin-top:24px;padding-top:0}
+.hero-bottom>div{text-align:center}
+@media(min-width:1001px){.hero-bottom>div{margin-left:calc(40% - 240px);width:220px}.hero-date{white-space:nowrap;font-size:24px}}
+@media(max-width:1000px){.hero-bottom{justify-content:center}.hero-bottom .explore{position:absolute;right:0;bottom:24px}}
+
+@media(min-width:601px) and (max-width:700px){.hero-bottom .explore{font-size:0;gap:0}}
