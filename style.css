@@ -304,3 +304,5 @@ h1{margin-top:0}
 .hero-featuring{margin-top:16px}
 
 @media(min-width:1001px){.hero-credits{margin-top:13.333px}}
+
+@media(min-width:1001px){.hero h1{font-size:89.08px}.hero-credits{margin-top:20px}}
