@@ -189,3 +189,10 @@ h1{margin-top:0}
 .hero-featuring .cast-row>span{white-space:nowrap}
 .hero-bottom>div{margin-left:0;width:440px;max-width:40%;text-align:center}
 }
+
+/* Align the wide title's second line with the centered billing beneath it. */
+@media(min-width:1001px){
+.hero h1{font-size:clamp(68px,8.636vw,142.8px)}
+.hero h1 span+span{width:440px;max-width:40%;margin-left:0;text-align:center;padding-right:0}
+}
+@media(max-width:1000px){.hero-art{width:72.25%}}
