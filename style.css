@@ -255,3 +255,10 @@ h1{margin-top:0}
 @media(min-width:1001px){.hero-art{top:107px}}
 @media(max-width:1000px){.hero h1{margin-top:20px}}
 @media(max-width:600px){.hero{padding-top:12px}.hero h1{margin-top:16px}}
+
+/* Balance the hero vertically without adding a fixed-height empty area. */
+.hero{padding-top:24px;padding-bottom:24px}
+.hero h1{margin-top:0}
+.hero-bottom{padding-bottom:0}
+@media(min-width:1001px){.hero-art{top:50%;transform:translateY(-50%)}}
+@media(max-width:1000px){.hero{padding-top:20px;padding-bottom:20px}}
