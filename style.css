@@ -67,3 +67,25 @@ h1{margin-top:0}
 .hero-credits{order:3;margin-top:28px}.hero-featuring{order:4}.hero-bottom{order:5;width:100%}
 }
 @media(max-width:600px){.hero h1{margin-top:35px}.hero-art{aspect-ratio:1.25;margin-top:26px}.hero-credits{margin-top:24px}}
+/* Compact centered credits and overlapping title on smaller screens. */
+@media(max-width:1000px){
+.hero h1{z-index:2;pointer-events:none}
+.hero-art{margin-top:-.9em;transform:translateY(-18px);margin-bottom:-18px}
+.hero-credits{display:grid;grid-template-columns:1fr 1fr;gap:20px;text-align:center}
+.hero-credits p+p{margin-top:0}
+.hero-featuring .hero-cast{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));column-gap:12px;row-gap:4px;text-align:center}
+.hero-featuring .hero-cast li{grid-column:span 2;white-space:nowrap}
+.hero-featuring .hero-cast li:nth-child(n+4){grid-column:span 3}
+}
+@media(max-width:600px){
+.hero-art{margin-top:-12px;transform:translateY(-18px);margin-bottom:-18px}
+.hero-credits strong,.hero-featuring .hero-cast{font-size:clamp(12px,3.8vw,19px);font-weight:300;line-height:1.55}
+.hero-featuring .hero-cast{column-gap:6px;row-gap:5px}
+.hero-featuring{margin-top:18px}.hero-credits{gap:12px;margin-top:22px}
+}
+
+.hero-featuring .cast-row>span{display:block}
+@media(max-width:1000px){.hero-featuring .hero-cast{display:block}.hero-featuring .cast-row{display:flex;justify-content:center;gap:16px}.hero-featuring .cast-row+.cast-row{margin-top:0}.hero-featuring .cast-row>span{white-space:nowrap}}
+@media(max-width:600px){.hero-featuring .cast-row{gap:12px}}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}.section{display:block}.about-main,.company-main,.performances-main{max-width:900px;margin-inline:auto}
