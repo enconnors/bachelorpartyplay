@@ -337,4 +337,4 @@ h1{margin-top:0}
 .ticket-link:hover{background:var(--green);color:var(--ivory)}
 
 /* Ivory title highlights follow each word, including the slanted PARTY! line. */
-.hero h1 mark{display:inline-block;background:var(--ivory);color:var(--green);font:inherit;letter-spacing:inherit;padding:.12em .09em .17em; margin:-.12em -.09em -.17em;}
+.hero h1 mark{display:inline-block;background:var(--ivory);color:var(--green);font:inherit;letter-spacing:inherit;padding:.12em; margin:-.12em;}
