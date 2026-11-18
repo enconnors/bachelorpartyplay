@@ -288,3 +288,5 @@ h1{margin-top:0}
 @media(min-width:1001px){.hero h1>span{font-size:1em}.hero h1>span:first-child{left:-.6em}.hero h1>span+span{left:1.4em}}
 
 @media(min-width:1001px){.hero h1{font-size:111.35px}}
+
+@media(min-width:1001px){.hero-credits{margin-top:10px}}
