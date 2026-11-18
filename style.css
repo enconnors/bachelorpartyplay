@@ -159,3 +159,9 @@ h1{margin-top:0}
 .synopsis{margin-inline:auto}
 
 .header{position:sticky;top:0;z-index:100;background:var(--green)}
+
+/* Equal rhythm around the performance dates. */
+.hero-bottom>div{display:flex;flex-direction:column;gap:10px}
+.hero-bottom>div>p,.hero-bottom .hero-performance-count{margin:0}
+.hero-bottom .hero-date{font-weight:300;line-height:1.2}
+.hero-bottom .hero-performance-count,.hero-bottom>div>p:last-child{font-size:12px;font-weight:500;line-height:1.5;letter-spacing:1.5px;text-transform:uppercase;color:var(--ivory)}
