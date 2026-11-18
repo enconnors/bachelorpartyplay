@@ -338,3 +338,7 @@ h1{margin-top:0}
 
 /* Ivory title highlights follow each word, including the slanted PARTY! line. */
 .hero h1 mark{display:inline-block;background:var(--ivory);color:var(--green);font:inherit;letter-spacing:inherit;padding:.12em; margin:-.12em;}
+
+/* Restore the space lost to BACHELOR's negative tracking after the final R. */
+.hero h1>span:first-child mark{padding-right:.185em;margin-right:-.185em}
+@media(max-width:600px){.hero h1>span:first-child mark{padding-right:.175em;margin-right:-.175em}}
