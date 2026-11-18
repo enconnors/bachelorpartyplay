@@ -342,3 +342,15 @@ h1{margin-top:0}
 /* Restore the space lost to BACHELOR's negative tracking after the final R. */
 .hero h1>span:first-child mark{padding-right:.185em;margin-right:-.185em}
 @media(max-width:600px){.hero h1>span:first-child mark{padding-right:.175em;margin-right:-.175em}}
+
+/* Cast headshots: matching square crops and two-column billing. */
+
+.company-main .cast-team{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 22px;width:100%;max-width:440px;margin-inline:auto}
+.company-main .cast-team li{margin:0;min-width:0;text-align:center}
+.company-main .cast-team li:last-child{grid-column:1 / -1;width:calc((100% - 22px)/2);justify-self:center}
+.cast-headshot{display:block;width:100%;aspect-ratio:1; height:auto;object-fit:cover;object-position:center 30%;margin:0 auto 12px}
+.company-main .cast-team h3{font-size:21px;line-height:1.2;margin:0}
+@media(min-width:1001px){.company-main{grid-template-columns:1fr 1.15fr;max-width:1050px;column-gap:70px;align-items:start}}
+@media(max-width:600px){.company-main .cast-team{gap:26px 18px;max-width:350px}.company-main .cast-team h3{font-size:18px}.company-main .cast-team li:last-child{width:calc((100% - 18px)/2)}}
+
+.cast-headshot[src*="stephen"]{object-position:center 12%}.cast-headshot[src*="will"]{object-position:center 10%}
