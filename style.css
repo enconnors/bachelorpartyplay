@@ -250,3 +250,8 @@ h1{margin-top:0}
 @media(min-width:1001px){.hero-art{top:136px}}
 
 @media(min-width:1001px){.hero h1>span:first-child{position:relative;left:-.12em}.hero h1>span+span{position:relative;left:.12em}}
+
+.hero{padding-top:12px}.hero h1{margin-top:30px}
+@media(min-width:1001px){.hero-art{top:107px}}
+@media(max-width:1000px){.hero h1{margin-top:20px}}
+@media(max-width:600px){.hero{padding-top:12px}.hero h1{margin-top:16px}}
