@@ -19,3 +19,15 @@ h1{margin-top:65px}
 @media(max-width:600px){.hero{padding-top:25px;min-height:0;height:auto}.hero-cast{margin-top:23px;display:flex;flex-wrap:wrap;justify-content:flex-start;column-gap:18px;row-gap:7px;font-size:12px;line-height:1.3}.hero-art{position:relative;top:auto;height:auto;margin-top:167px}h1{top:145px;margin:0}.visit .performance-dates{font-size:38px;line-height:1.15}.visit .performance-dates .date-year{font-size:24px;margin:8px 0 0}.hero-credits{margin-top:22px}}
 @media(max-width:360px){.hero-cast{font-size:11px;column-gap:12px}.visit .performance-dates{font-size:34px}}
 @media(max-width:600px){.hero-cast{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));column-gap:8px;row-gap:8px;text-align:center}.hero-cast li{grid-column:span 2;white-space:nowrap}.hero-cast li:nth-child(n+4){grid-column:span 3}}
+
+/* Cast follows the director credit. */
+.hero-featuring{position:relative;z-index:2;width:34%;margin-top:23px}
+.featuring-label{font-size:12px;margin-bottom:10px}
+.hero-featuring .hero-cast{display:block;margin:0;font-size:17px;font-weight:300;line-height:1.45;letter-spacing:.1px}
+.hero-featuring .hero-cast li{white-space:normal}
+.hero{min-height:850px}
+@media(max-width:1000px){.hero{min-height:810px}.hero-featuring{width:36%;margin-top:22px}.hero-featuring .hero-cast{font-size:16px}.hero-bottom{margin-top:35px}}
+@media(max-width:600px){.hero{min-height:0}.hero-art{margin-top:176px}h1{top:72px}.hero-featuring{width:100%;margin-top:22px}.featuring-label{font-size:11px;margin-bottom:10px}.hero-featuring .hero-cast{display:flex;flex-wrap:wrap;justify-content:flex-start;column-gap:16px;row-gap:6px;font-size:13px;text-align:left;line-height:1.4}.hero-bottom{margin-top:0}}
+
+.header-actions{display:flex;gap:18px;align-items:center}.instagram-link{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid var(--ivory);transition:background .2s,color .2s}.instagram-link:hover{background:var(--ivory);color:var(--green)}.instagram-link svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.4}.hero{height:calc(100svh - 100px)}
+@media(max-width:600px){.header{flex-wrap:nowrap;padding:17px 6vw;gap:10px}.header-actions{gap:10px}.instagram-link{width:37px;height:37px}.instagram-link svg{width:20px;height:20px}.header-actions .button{font-size:10px;padding:8px 10px;gap:15px;min-height:37px}.hero{height:auto}}
