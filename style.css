@@ -318,3 +318,6 @@ h1{margin-top:0}
 .hero h1>span+span{left:.4em}
 .hero-art{width:43.01%}
 }
+
+.button .ticket-label{display:flex;flex-direction:column;gap:5px;font-size:inherit;line-height:1.2;text-align:left}.ticket-label small{font-size:9px;font-weight:400;letter-spacing:.3px;text-transform:none}
+@media(max-width:600px){.ticket-label small{font-size:8px}.header-actions .button{gap:10px}}
