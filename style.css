@@ -130,7 +130,7 @@ h1{margin-top:0}
 .bio p strong{font-weight:600}
 
 /* Keep the cast together as a compact ensemble. */
-.cast-team{max-width:480px;gap:8px 20px}.company-main>.group-heading{margin-bottom:20px}
+.cast-team{max-width:480px;gap:16px 20px}.company-main>.group-heading{margin-bottom:20px}
 @media(max-width:600px){.cast-team{column-gap:12px}}
 
 /* Center the biography and remaining performance information. */
@@ -139,3 +139,5 @@ h1{margin-top:0}
 .bio summary,.schedule summary{position:relative;justify-content:center}
 .bio summary>span,.schedule summary>span{position:absolute;right:0}
 .venue .button{margin-inline:auto}
+
+.bio strong a{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
