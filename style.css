@@ -207,3 +207,5 @@ h1{margin-top:0}
 .hero h1>span{display:flex;justify-content:center;white-space:nowrap}
 .hero h1 span+span{width:100%;max-width:none;margin-left:0;text-align:center}
 }
+
+.performances .visit{display:block;text-align:center}.performances .venue{margin-inline:auto;padding-top:0}
