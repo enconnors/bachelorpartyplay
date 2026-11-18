@@ -311,3 +311,10 @@ h1{margin-top:0}
 
 /* Keep the second title line overlapping the photo at every wide width. */
 @media(min-width:1001px){.hero h1>span+span{left:0;justify-content:flex-end;text-align:right;width:100%}}
+
+/* Stronger wide stagger and a little more clearance beside the billing. */
+@media(min-width:1001px){
+.hero h1>span:first-child{left:-.9em}
+.hero h1>span+span{left:.4em}
+.hero-art{width:43.01%}
+}
