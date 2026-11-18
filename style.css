@@ -122,3 +122,5 @@ h1{margin-top:0}
 
 .cast-team{font-size:25px;font-weight:300;line-height:1.5}
 @media(max-width:600px){.cast-team{font-size:21px}}
+
+.company-main>.group-heading,.creative-heading,.creative-list{text-align:center}
