@@ -230,3 +230,9 @@ h1{margin-top:0}
 
 .synopsis{font-size:clamp(19.55px,2.125vw,28.9px)}
 @media(max-width:600px){.synopsis{font-size:20.4px}}
+
+/* Reduce the wide photo while balancing the composition's outer margins. */
+@media(min-width:1001px){
+.hero-art{width:46.75%;right:4.125%}
+.hero h1,.hero-credits,.hero-featuring,.hero-bottom>div{margin-left:4.125%}
+}
