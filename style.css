@@ -101,7 +101,7 @@ h1{margin-top:0}
 .hero-bottom{margin-top:48px;padding-top:0;padding-bottom:32px}
 }
 
-.company-main>.creative-heading{margin-top:0}
+.company-main>.creative-heading:first-child{margin-top:0}
 @media(min-width:1001px){.hero-credits,.hero-featuring{margin-left:calc(40% - 240px);width:220px}}
 
 /* Keep the staggered title consistent throughout the stacked layout. */
