@@ -361,3 +361,22 @@ h1{margin-top:0}
 .cast-column>.bio,.team-column>.bio{margin-top:32px}
 .bio strong{font-weight:600}
 @media(max-width:1000px){.team-column{margin-top:44px}}
+
+/* Photo bio preview */
+.cast-hint{text-align:center;font-size:14px;letter-spacing:.04em;margin:-8px 0 24px;opacity:.75}
+.cast-photo-button{display:block;width:100%;padding:0;margin:0 0 12px;border:0;background:none;color:inherit;cursor:pointer;overflow:hidden}
+.cast-photo-button .cast-headshot{margin:0;transition:transform .2s,filter .2s}
+.cast-photo-button:hover .cast-headshot{transform:scale(1.035);filter:brightness(1.12)}
+.cast-photo-button:focus-visible,.bio-close:focus-visible{outline:2px solid var(--ivory);outline-offset:5px}
+.cast-dialog{background:var(--green);color:var(--ivory);border:1px solid var(--line);padding:48px;width:min(860px,calc(100% - 32px));max-height:calc(100svh - 48px);overflow:auto;box-shadow:0 24px 100px #0008}
+.cast-dialog::backdrop{background:rgba(4,15,12,.8);backdrop-filter:blur(5px)}
+.bio-close{position:absolute;right:12px;top:8px;width:44px;height:44px;padding:0;background:none;border:0;color:inherit;font:300 32px/1 Arial;cursor:pointer}
+.bio-layout{display:grid;grid-template-columns:210px 1fr;gap:32px;align-items:start}
+.bio-portrait{width:100%;aspect-ratio:1;object-fit:cover;object-position:center 20%}
+.bio-eyebrow{font-size:14px;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;opacity:.7}
+.bio-copy h2{font-size:32px;line-height:1.1;margin-bottom:22px;font-weight:400}
+.bio-text{font-size:17px;line-height:1.65;font-weight:300}
+@media(max-width:600px){.cast-dialog{padding:48px 24px 28px}.bio-layout{grid-template-columns:1fr;gap:24px}.bio-portrait{width:128px}.bio-copy h2{font-size:28px;margin-bottom:16px}}
+@media(prefers-reduced-motion:reduce){.cast-photo-button .cast-headshot{transition:none}}
+
+.creative-bio-button{font:inherit;color:inherit;background:none;border:0;padding:0;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;cursor:pointer}.creative-bio-button:hover{opacity:.75}.creative-bio-button:focus-visible{outline:2px solid currentColor;outline-offset:6px}.cast-dialog.without-portrait{width:min(660px,calc(100% - 32px))}.without-portrait .bio-layout{grid-template-columns:1fr}.bio-portrait[hidden]{display:none}
