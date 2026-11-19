@@ -16,10 +16,18 @@ document.querySelectorAll('.cast-photo-button, .creative-bio-button').forEach(bu
   button.addEventListener('click', () => {
     const portrait = button.querySelector('img');
     const modalPortrait = bioDialog.querySelector('.bio-portrait');
-    modalPortrait.hidden = !portrait;
-    bioDialog.classList.toggle('without-portrait', !portrait);
-    if (portrait) { modalPortrait.src = portrait.src; modalPortrait.alt = portrait.alt; }
-    const name = portrait ? portrait.alt : button.dataset.name;
+    const portraitSource = portrait?.src || button.dataset.portrait;
+    const name = button.dataset.name || portrait?.alt || button.textContent.trim();
+    modalPortrait.hidden = !portraitSource;
+    bioDialog.classList.toggle('without-portrait', !portraitSource);
+    bioDialog.classList.toggle('creative-dialog', button.classList.contains('creative-bio-button'));
+    if (portraitSource) {
+      modalPortrait.src = portraitSource;
+      modalPortrait.alt = name;
+    } else {
+      modalPortrait.removeAttribute('src');
+      modalPortrait.alt = '';
+    }
     const role = document.getElementById(`cast-bio-${button.dataset.bio}`).dataset.role;
     bioDialog.querySelector('h2').textContent = name + (role ? ` (${role})` : '');
     bioDialog.querySelector('.bio-text').replaceChildren(document.getElementById(`cast-bio-${button.dataset.bio}`).content.cloneNode(true));
