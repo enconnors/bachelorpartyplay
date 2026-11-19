@@ -384,3 +384,7 @@ h1{margin-top:0}
 /* Place the final ticket action ahead of the venue details. */
 .performances .venue .button{margin-top:0}
 .performances .venue .ticket-note{margin-bottom:28px}
+
+/* Keep creative billing compact when the team stacks below the cast. */
+@media(max-width:1000px){.team-column .creative-list{width:100%;max-width:480px;margin-inline:auto;column-gap:24px}}
+@media(max-width:600px){.team-column .creative-list{max-width:380px;column-gap:16px}}
