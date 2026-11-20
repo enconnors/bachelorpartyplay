@@ -438,3 +438,9 @@ h1{margin-top:0}
 .contact-details strong{font-weight:600}
 
 .synopsis .run-time{font-size:18px;line-height:1.5;letter-spacing:normal;margin-top:24px;font-weight:300}
+
+/* Keep hero venue and performance count at 85% of the date size. */
+.hero-bottom{--hero-date-size:21px}
+.hero-bottom .hero-date{font-size:var(--hero-date-size)}
+.hero-bottom .hero-performance-count,.hero-bottom>div>p:last-child{font-size:calc(var(--hero-date-size) * .85)}
+@media(max-width:600px){.hero-bottom{--hero-date-size:clamp(12px,3.8vw,19px)}}
