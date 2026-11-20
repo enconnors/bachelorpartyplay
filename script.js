@@ -1,5 +1,5 @@
 let noticeTimer;
-document.querySelectorAll('[data-ticket], [data-instagram]').forEach(link => {
+document.querySelectorAll('[data-instagram]').forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault();
     const status = document.getElementById('ticket-status');
