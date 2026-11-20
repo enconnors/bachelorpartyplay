@@ -424,3 +424,7 @@ h1{margin-top:0}
 /* Preserve the top of Will’s submitted headshot in both views. */
 .bio-portrait[src*="will-submitted"]{object-position:center top}
 .cast-photo-button:hover .cast-headshot[src*="will-submitted"]{transform:none}
+
+/* Preserve Keshav’s hairline in both headshot views. */
+.cast-headshot[src*="keshav"],.bio-portrait[src*="keshav"]{object-position:center top}
+.cast-photo-button:hover .cast-headshot[src*="keshav"]{transform:none}
