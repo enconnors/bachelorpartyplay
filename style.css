@@ -432,3 +432,5 @@ h1{margin-top:0}
 /* Preserve the top of every cast and biography portrait. */
 .cast-photo-button .cast-headshot,.cast-dialog .bio-portrait{object-position:center top}
 .cast-photo-button:hover .cast-headshot{transform:none}
+
+.contact-details{text-align:center;margin-bottom:36px;font-size:16px;line-height:1.6;font-weight:300}.contact-details p{font-weight:inherit}.contact-details p+p{margin-top:6px}.contact-details a{text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
