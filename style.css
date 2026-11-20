@@ -353,7 +353,7 @@ h1{margin-top:0}
 @media(min-width:1001px){.company-main{grid-template-columns:1fr 1.15fr;max-width:1050px;column-gap:70px;align-items:start}}
 @media(max-width:600px){.company-main .cast-team{gap:26px 18px;max-width:350px}.company-main .cast-team h3{font-size:18px}.company-main .cast-team li:last-child{width:calc((100% - 18px)/2)}}
 
-.cast-headshot[src*="stephen"]{object-position:center 12%}.cast-headshot[src*="will"]{object-position:center 10%}
+.cast-headshot[src*="stephen"]{object-position:center 12%}.cast-headshot[src*="will"]{object-position:center top}
 
 /* Independent cast and creative columns keep their biography dropdowns below each list. */
 .cast-column,.team-column{min-width:0}
@@ -420,3 +420,7 @@ h1{margin-top:0}
 /* Stack the presenter name on mobile. */
 .mobile-brand-break{display:none}
 @media(max-width:600px){.header{gap:10px}.header-actions{flex-shrink:0}.header .brand{gap:7px}.header .brand-motif{height:32px}.mobile-brand-break{display:block}.header .brand-label{font-size:11px;letter-spacing:1px;line-height:1.3}.header .brand-label span{font-size:8px;letter-spacing:2px;margin-top:4px}}
+
+/* Preserve the top of Will’s submitted headshot in both views. */
+.bio-portrait[src*="will-submitted"]{object-position:center top}
+.cast-photo-button:hover .cast-headshot[src*="will-submitted"]{transform:none}
