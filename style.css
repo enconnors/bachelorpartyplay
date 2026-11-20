@@ -409,3 +409,10 @@ h1{margin-top:0}
 .hero-enter .hero-featuring{animation:hero-arrive .45s ease-out .43s both}
 .hero-enter .hero-bottom{animation:hero-arrive .45s ease-out .54s both}
 @media(prefers-reduced-motion:reduce){.hero-enter .hero-art,.hero-enter .hero-art img,.hero-enter h1>span,.hero-enter .hero-credits,.hero-enter .hero-featuring,.hero-enter .hero-bottom{animation:none}}
+
+/* Sun-and-bull mark beside the presenter. */
+
+.header .brand{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.header .brand-motif{height:46px;width:auto;flex-shrink:0}
+@media(max-width:600px){.header .brand{gap:9px}.header .brand-motif{height:34px}}
+@media(max-width:380px){.header .brand{gap:6px;font-size:10px}.header .brand-motif{height:29px}.header-actions{gap:7px}}
